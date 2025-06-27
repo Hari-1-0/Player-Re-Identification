@@ -26,3 +26,26 @@ This project implements an **enhanced, real-time player re-identification system
 ```bash
 git clone https://github.com/your-username/player-reidentification.git
 cd player-reidentification
+```
+### 2. Create and activate Virtual Environment
+# For Windows
+```bash
+python -m venv myenv
+myenv\Scripts\activate
+```
+# For Linux/macOS
+```bash
+python3 -m venv myenv
+source myenv/bin/activate
+```
+Also download the model from the following link and add it to the project folder
+```bash
+https://huggingface.co/Hari-1-0/player-re-identification
+```
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+## Required files
+- best.pt --> Fine-tuned YOLO model for player and ball detection
+- 15sec_input_720p.mp4 --> Input video file for processing.
