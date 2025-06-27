@@ -24,8 +24,8 @@ This project implements an **enhanced, real-time player re-identification system
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/player-reidentification.git
-cd player-reidentification
+git clone https://github.com/Hari-1-0/Player-Re-Identification.git
+cd Player-Re-Identification
 ```
 ### 2. Create and activate Virtual Environment
 ## For Windows
