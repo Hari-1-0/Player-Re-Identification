@@ -28,12 +28,12 @@ git clone https://github.com/your-username/player-reidentification.git
 cd player-reidentification
 ```
 ### 2. Create and activate Virtual Environment
-# For Windows
+## For Windows
 ```bash
 python -m venv myenv
 myenv\Scripts\activate
 ```
-# For Linux/macOS
+## For Linux/macOS
 ```bash
 python3 -m venv myenv
 source myenv/bin/activate
@@ -49,3 +49,15 @@ pip install -r requirements.txt
 ## Required files
 - best.pt --> Fine-tuned YOLO model for player and ball detection
 - 15sec_input_720p.mp4 --> Input video file for processing.
+# How to Run
+```bash
+python main.py
+```
+# Optional:
+To save the output video, you can pass the output_path parameter in process_video():
+```bash
+reid_system.process_video(
+    output_path='output_video.mp4',
+    show_display=True
+)
+```
